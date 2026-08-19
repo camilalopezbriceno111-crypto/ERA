@@ -360,3 +360,91 @@ footer {
     }
 
 }
+
+/* HOME */
+
+.welcome {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    padding: 90px 30px 60px;
+}
+
+.welcome h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.welcome > p:last-child {
+    color: #666;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button.secondary {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.button.secondary:hover {
+    background: white;
+    color: #111;
+}
+
+.home-cards {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px 90px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.home-card {
+    background: white;
+    padding: 35px;
+    min-height: 230px;
+    border-top: 4px solid #222;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.home-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.home-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.home-card a {
+    color: #222;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home-card a:hover {
+    color: #777;
+}
+
+@media (max-width: 850px) {
+
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h2 {
+        font-size: 34px;
+    }
+
+}
